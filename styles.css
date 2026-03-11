@@ -1,1 +1,11 @@
-
+.mainContainer{
+    height: 100vh;
+    display: flex;
+}
+.textContainer{
+    margin: 5rem;
+}
+.imgContainer img{
+    width: 5rem;
+    height: auto;
+}
