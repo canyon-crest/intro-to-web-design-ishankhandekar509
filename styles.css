@@ -1,11 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#HeroSection{
+    height: 100vh;
+    background-image: url('images/christian-buehner-DItYlc26zVI-unsplash.jpg');
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #5F99AF;  
+  background-blend-mode: multiply;
+  display: flex;
+  
+}
+
 .mainContainer{
     height: 100vh;
     display: flex;
 }
-.textContainer{
-    margin: 5rem;
+#currentInterests{
+    background-color: #f1f1f1;
 }
-.imgContainer img{
-    width: 5rem;
+.imageContainer{
+    width: 50vw;
+    margin: 5rem;
+    overflow: hidden;
+}
+.textContainer{
+    margin: 8rem;
+    width: 50vw;
+    
+}
+.textContainer h3{
+    font-family: montserrat;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    color: black;
+    letter-spacing: 1px;
+}
+.textContainer p{
+    font-family: montserrat;
+    font-weight: 400;
+    color:  #847e82;
+}
+/* .textContainer a{
+    text-decoration: none;
+    color: #003348;
+    font-weight: 500;
+     text-decoration: underline;
+    text-decoration-thickness: 2px; 
+} */
+a {
+    white-space: nowrap;
+    text-decoration: none;
+    color: #e22c39;
+    font-weight: 500;
+    font-family: roboto mono;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  position: relative;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-radius: 4px;
+    background-color: #e22c39;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.imageContainer img{
+    width: 40vw;
     height: auto;
 }
