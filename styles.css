@@ -11,9 +11,24 @@
   background-color: #5F99AF;  
   background-blend-mode: multiply;
   display: flex;
-  
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0rem 10rem;
 }
-
+h1{
+    font-size: 7rem;
+    font-family: montserrat;
+    color: white;
+    text-align: center;
+}
+#HeroSection h2{
+    color: white;
+    font-family: montserrat;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
 .mainContainer{
     height: 100vh;
     display: flex;
