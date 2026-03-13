@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #5F99AF;  
+  background-color: #637a88;  
   background-blend-mode: multiply;
   display: flex;
   justify-content: center;
@@ -105,4 +105,34 @@ a:hover::before {
 .imageContainer img{
     width: 40vw;
     height: auto;
+}
+#topBar{
+    width: 100vw;
+    height: 10vh;
+    background-color: white;
+    position: fixed;
+    
+    align-items: center;
+    padding: 3vh 2vw;
+    z-index: 20;
+    
+}
+#topBar h2{
+    font-family: outfit;
+    font-weight: 600;
+    color:#003349;
+    text-transform: uppercase;
+    font-size: 2rem;
+    float: left;
+}   
+#topBar span{
+    margin-right: 3vw;
+    float: right;
+    font-family: montserrat;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #e22c39;
 }
