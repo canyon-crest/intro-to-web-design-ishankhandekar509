@@ -76,8 +76,14 @@ a {
     letter-spacing: 0.5px;
     text-transform: uppercase;
   position: relative;
+  font-style: normal;
 }
-
+a:visited{
+    color: #003349;
+}
+#topLink:visited{
+    color: lightgray;
+}
 a::before {
     content: '';
     position: absolute;
