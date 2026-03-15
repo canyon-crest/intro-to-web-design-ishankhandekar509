@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 #HeroSection{
     height: 100vh;
     background-image: url('images/christian-buehner-DItYlc26zVI-unsplash.jpg');
@@ -21,6 +24,7 @@ h1{
     font-family: montserrat;
     color: white;
     text-align: center;
+    float: left;
 }
 #HeroSection h2{
     color: white;
@@ -129,7 +133,8 @@ a:hover::before {
     margin-right: 3vw;
     float: right;
     font-family: montserrat;
-    font-weight: 500;
+    border-radius: 30px;
+    font-weight: 600;
     text-transform: uppercase;
     padding: 1rem 1.5rem;
     font-size: 1rem;
