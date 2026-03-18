@@ -35,6 +35,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.2s ease-in-out;
 }
 
 /* 3. Hide Sun SVG by default */
@@ -63,6 +64,9 @@ html{
 }
 #dark-toggle:checked ~ #page #HeroSection{
     background-image: url("images/tim-oun-jY_W5x74GTs-unsplash.jpg");
+}
+#theme-switch:hover{
+    transform: scale(1.1);
 }
 
 .scroll-watcher{
