@@ -3,21 +3,48 @@
     padding: 0;
 }
 :root{
-    --base-color: white; 
+    --base-color: rgb(255, 255, 255); 
     --accent-color: #e22c39;
     --secondary-base: #f1f1f1;
     --text-color: black;
     --secondary-text-color: #767676;
     --secondary-acccent-color: #003349;
+    --icon-color: #3a435d;
 }
 html{
     scroll-behavior: smooth;
 }
-#dark-toggle{
-    position: fixed; 
-    top: 1rem;
-    right: 1rem;
-    
+/* 1. Hide checkbox */
+#dark-toggle {
+    display: none;
+}
+
+/* 2. Style the label (the clickable area) */
+#theme-switch {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 3. Hide Sun SVG by default */
+#theme-switch svg:last-child {
+    display: none;
+}
+
+/* 4. When checked: Hide Moon, Show Sun */
+#dark-toggle:checked + #theme-switch svg:first-child {
+    display: none;
+}
+
+#dark-toggle:checked + #theme-switch svg:last-child {
+    display: block;
 }
 .scroll-watcher{
     height: 3px;
@@ -181,7 +208,7 @@ a {
   font-style: normal;
 }
 a:visited{
-    color: var;
+    color: var(--secondary-acccent-color);
 }
 
 a::before {
@@ -206,37 +233,8 @@ a:hover::before {
     width: 40vw;
     height: auto;
 }
-#topBar{
-    width: 100vw;
-    height: 10vh;
-    background-color: white;
-    position: fixed;
-    
-    align-items: center;
-    padding: 3vh 2vw;
-    z-index: 20;
-    
-}
-#topBar h2{
-    font-family: outfit;
-    font-weight: 600;
-    color:#003349;
-    text-transform: uppercase;
-    font-size: 2rem;
-    float: left;
-}   
-#topBar span{
-    margin-right: 3vw;
-    float: right;
-    font-family: montserrat;
-    border-radius: 30px;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 1rem 1.5rem;
-    font-size: 1rem;
-    color: white;
-    background-color: var(--accent-color);
-}
+
+
 .textContainer{
     animation: fade-in linear;
     animation-timeline: view();

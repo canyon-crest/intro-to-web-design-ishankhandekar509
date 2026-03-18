@@ -19,7 +19,16 @@
   </head>
     
   <body>
-    <input type="checkbox" id="dark-toggle">
+    <!-- Put the checkbox first -->
+<input type="checkbox" id="dark-toggle">
+
+<!-- Label follows checkbox -->
+<label for="dark-toggle" id="theme-switch">
+    <!-- SVG 1 (Moon - hidden when checked) -->
+    <svg id="moon" ...>...</svg>
+    <!-- SVG 2 (Sun - visible when checked) -->
+    <svg id="sun" ...>...</svg>
+</label>
     <div id="page">
     <span class="scroll-watcher"></span>
     <!-- <div id="topBar">
