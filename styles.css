@@ -10,7 +10,9 @@
     --secondary-text-color: #767676;
     --secondary-acccent-color: #003349;
     --icon-color: #3a435d;
+    --hero-text: white;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -49,6 +51,19 @@ html{
     display: block;
 }
 
+#dark-toggle:checked ~ #page{
+    --base-color: #121212; 
+    --accent-color: #0071ff;
+    --secondary-base: #1A1F25 ;
+    --text-color: white;
+    --secondary-text-color: rgba(255,255,255,0.5);
+    --secondary-acccent-color: #003349;
+    --icon-color: #3a435d;
+    --hero-text: rgba(255,255,255,1);
+}
+#dark-toggle:checked ~ #page #HeroSection{
+    background-image: url("images/tim-oun-jY_W5x74GTs-unsplash.jpg");
+}
 
 .scroll-watcher{
     height: 3px;
@@ -144,14 +159,14 @@ html{
 h1{
     font-size: 7rem;
     font-family: montserrat;
-    color: var(--base-color);
+    color: var(--hero-text);
     font-weight: 500;
     
     
 }
 
 #HeroSection h2{
-    color: var(--base-color);
+    color: var(--hero-text);
     font-family: montserrat;
     font-weight: 300;
     font-style: italic;
@@ -160,7 +175,7 @@ h1{
 .mainContainer{
     height: 100vh;
     display: flex;
-    color: var(--base-color);
+    background-color: var(--base-color);
 }
 #currentInterests{
     background-color: var(--secondary-base);
