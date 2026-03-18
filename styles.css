@@ -19,13 +19,54 @@ html{
   flex-direction: column;
   padding: 0rem 10rem;
 }
+#heroTxtWrapper{
+    display: flex;
+}
+#heroTxtWrapper .dynamic-txts{
+    margin-left: 20px;
+    z-score: 1;
+}
+
+.dynamic-txts li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.1);
+    z-score: 2;
+    border-left: 2px solid #e22c39;
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing{
+    40%, 
+    60%{
+        left: calc(100% + 30px);
+    }
+    100%{
+        left: 0;
+    }
+}
+
+.dynamic-txts li{
+    color:#e22c39;
+    font-size: 7rem;
+    position: relative;
+    list-style: none;
+    font-family: montserrat;
+    font-weight: 500;
+    
+}
 h1{
     font-size: 7rem;
     font-family: montserrat;
     color: white;
-    text-align: center;
-    float: left;
+    font-weight: 500;
+    
+    
 }
+
 #HeroSection h2{
     color: white;
     font-family: montserrat;
