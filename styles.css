@@ -2,15 +2,29 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --base-color: white; 
+    --accent-color: #e22c39;
+    --secondary-base: #f1f1f1;
+    --text-color: black;
+    --secondary-text-color: #767676;
+    --secondary-acccent-color: #003349;
+}
 html{
     scroll-behavior: smooth;
+}
+#dark-toggle{
+    position: fixed; 
+    top: 1rem;
+    right: 1rem;
+    
 }
 .scroll-watcher{
     height: 3px;
     position: fixed;
     top: 0;
     z-index: 1000;
-    background-color:#e22c39;
+    background-color: var(--accent-color);
     width: 100%;
     scale: 0 1;
     animation: scroll-watcher linear;
@@ -58,7 +72,7 @@ html{
     /* background-color: #082032; */
     backdrop-filter: blur(100px);
     
-    border-left: 4px solid #e22c39;
+    border-left: 4px solid var(--accent-color);
     animation: typing 2.5s steps(10) infinite;
 }
 
@@ -73,7 +87,7 @@ html{
 }
 
 .dynamic-txts li{
-    color:#e22c39;
+    color: var(--accent-color);
     font-size: 7rem;
     position: relative;
     list-style: none;
@@ -99,14 +113,14 @@ html{
 h1{
     font-size: 7rem;
     font-family: montserrat;
-    color: white;
+    color: var(--base-color);
     font-weight: 500;
     
     
 }
 
 #HeroSection h2{
-    color: white;
+    color: var(--base-color);
     font-family: montserrat;
     font-weight: 300;
     font-style: italic;
@@ -115,9 +129,10 @@ h1{
 .mainContainer{
     height: 100vh;
     display: flex;
+    color: var(--base-color);
 }
 #currentInterests{
-    background-color: #f1f1f1;
+    background-color: var(--secondary-base);
 }
 .imageContainer{
     width: 50vw;
@@ -135,7 +150,7 @@ h1{
     font-weight: 500;
     font-size: 3.5rem;
     margin-bottom: 2rem;
-    color: black;
+    color: var(--text-color);
     letter-spacing: 1px;
 }
 .textContainer p{
@@ -144,7 +159,7 @@ h1{
     font-style: normal;
     font-size: 16px;
     line-height: 28px;
-    color:  #767676;
+    color:  var(--secondary-text-color);
 }
 
 /* .textContainer a{
@@ -157,7 +172,7 @@ h1{
 a {
     white-space: nowrap;
     text-decoration: none;
-    color: #e22c39;
+    color: var(--accent-color);
     font-weight: 500;
     font-family: roboto mono;
     letter-spacing: 0.5px;
@@ -166,18 +181,16 @@ a {
   font-style: normal;
 }
 a:visited{
-    color: #003349;
+    color: var;
 }
-#topLink:visited{
-    color: lightgray;
-}
+
 a::before {
     content: '';
     position: absolute;
     width: 100%;
     height: 1px;
     border-radius: 4px;
-    background-color: #e22c39;
+    background-color: var(--accent-color);
     bottom: 0;
     left: 0;
     transform-origin: right;
@@ -222,7 +235,7 @@ a:hover::before {
     padding: 1rem 1.5rem;
     font-size: 1rem;
     color: white;
-    background-color: #e22c39;
+    background-color: var(--accent-color);
 }
 .textContainer{
     animation: fade-in linear;
