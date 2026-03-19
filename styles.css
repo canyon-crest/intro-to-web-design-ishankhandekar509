@@ -5,6 +5,7 @@
 :root{
     --base-color: rgb(255, 255, 255); 
     --accent-color: #e22c39;
+    --accent-color-washed: rgba(226, 44, 57, 0.5);
     --secondary-base: #f1f1f1;
     --text-color: black;
     --secondary-text-color: #767676;
@@ -12,7 +13,23 @@
     --icon-color: #3a435d;
     --hero-text: white;
 }
-
+::selection{
+    background-color: var(--accent-color);
+    color: white;
+}
+.highlight{
+    background-color: var(--accent-color);
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: white;
+}
+.underline{
+    text-decoration: underline;
+    text-decoration-color: #ff5733; 
+  text-decoration-thickness: 3px;  
+  text-decoration-style: solid;   
+  text-underline-offset: 2px; 
+}
 html{
     scroll-behavior: smooth;
 }
@@ -124,7 +141,7 @@ html{
 }
 #mobileHeroText{
     display: none;
-
+    color: var(--hero-text);
 }
 #heroTxtWrapper{
     display: flex;
@@ -247,7 +264,7 @@ h1{
     text-decoration-thickness: 2px; 
 } */
 
-a {
+a:link{
     white-space: nowrap;
     text-decoration: none;
     color: var(--accent-color);
@@ -360,6 +377,9 @@ a:hover::before {
 }
 }
 @media (max-width: 768px){
+    .sidebar{
+        display: none;
+    }
     #mobileHeroText{
         font-size: 3rem;
     }
