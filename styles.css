@@ -232,8 +232,8 @@ h1{
     font-family: epilogue, "TT Norms Pro", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 1rem;
-    line-height: 2rem;
+    font-size: 16px;
+    line-height: 28px;
     color:  var(--secondary-text-color);
 }
 
@@ -307,11 +307,31 @@ a:hover::before {
     #HeroSection h2{
         text-align: left;
     }
+    .sidebar{
+        width: 2rem;
+    }
+    .sidebar h2{
+        font-size: 1rem;
+    }
 }
 @media (max-width: 992px){
+    #HeroSection{
+        align-items: flex-start;
+        
+    }
+    
+    
+    #mobileHeroText{
+        font-size: 4rem;
+        text-align: left;
+    }
+    #HeroSection h2{
+        font-size: 1.3rem;
+
+    }
     .mainContainer{
         flex-direction: column;
-        margin-bottom: 2rem;
+        padding-bottom: 2rem;
     }
     #currentInterests .imageContainer{
         order: 2;
@@ -330,14 +350,41 @@ a:hover::before {
         margin-left: 10vw;
         margin-right: 10vw;
     }
+    
     .imageContainer img{
     width: 80vw;
     height: auto;
 }
 }
 @media (max-width: 768px){
+    #mobileHeroText{
+        font-size: 3rem;
+    }
+    #HeroSection{
+        padding: 0rem 5rem;
+    }
+    #HeroSection h2{
+        font-size: 0.7rem;
+    }
     .textContainer p{
-        font-size: 100px;
-        line-height: 200px;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+}
+@media (max-width: 500px){
+    .textContainer p{
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+    .textContainer{
+        width: 70vw;
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+    .imageContainer{
+        width: 70vw;
+        margin-left: 15vw;
+        margin-right: 15vw;
     }
 }
