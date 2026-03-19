@@ -208,6 +208,7 @@ h1{
 }
 #currentInterests{
     background-color: var(--secondary-base);
+    
 }
 .imageContainer{
     width: 50vw;
@@ -227,6 +228,7 @@ h1{
     margin-bottom: 2rem;
     color: var(--text-color);
     letter-spacing: 1px;
+    
 }
 .textContainer p{
     font-family: epilogue, "TT Norms Pro", sans-serif;
@@ -282,6 +284,7 @@ a:hover::before {
 .imageContainer img{
     width: 40vw;
     height: auto;
+    float: none;
 }
 
 
